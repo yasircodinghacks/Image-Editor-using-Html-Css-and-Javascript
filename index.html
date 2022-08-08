@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="profile.jpg" type="image/x-icon">
+
+  </head>
+  <body>
+    <div class="maincontainner disable">
+      <h1>Image Editor</h1>
+      <div class="containner">
+        <div class="firstdiv">
+          <div class="filters">
+            <h1>Filters</h1>
+            <div class="options">
+              <button id="brightness" class="filter active">brightness</button>
+              <button id="saturation" class="filter">saturation</button>
+              <button id="inversion" class="filter">inversion</button>
+              <button id="grayscale" class="filter">grayscale</button>
+            </div>
+          </div>
+          <div class="range">
+            <div class="filterlable">
+                <h1>brightness</h1>
+                <h1 class="filterpercentage">100%</h1>
+            </div>
+            <input type="range" name="" id="" class="filterslider" value="100" max="200">
+        </div>
+        <div class="flipoptions">
+        <h1>Flip&Rotate</h1>
+        <div class="filprotate">
+            <button id="left" class="btnrr"><i class="fa-solid fa-rotate-right"></i></button>
+            <button id="right" class="btnrl"><i class="fa-solid fa-rotate-left"></i></button>
+            <button id="horizontal" class="btnhf"><i class='bx bx-reflect-horizontal'></i></button>
+            <button id="vertical" class="btnvf"><i class='bx bx-reflect-vertical' ></i></button>
+        </div>
+      </div>
+        </div>
+        <div class="seconddiv">
+          <img src="image-placeholder.svg" alt="" class="imageclass">
+        </div>
+      </div>
+      <div class="footer">
+        <div class="resetbtn">
+            <button class="reset">reset filter</button>
+        </div>
+        <dev class="chooseimage">
+            <input type="file" name="" class="getfile" hidden>
+            <button class="choosebtn">choose image</button>
+            <button class="saveimage">save image</button>
+        </dev>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
