@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+button{
+  cursor: pointer;
+}
+.seconddiv img{
+    height: 95%;
+    max-width: 95%;
+}
+h1{
+    color: blue;
+}
+body {
+  font-size: 62.5%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4169e1;
+}
+.maincontainner {
+  width: 65%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0fff0;
+  border-radius: 5px;
+  padding: 5px;
+}
+.disable :where(.containner , .resetbtn , .saveimage){
+  opacity: 0.5;
+  pointer-events: none;
+}
+.containner {
+  width: 95%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+.firstdiv {
+  width: 33%;
+  height: 90%;
+  padding: 5px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.seconddiv {
+  width: 63%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #dcdcdc;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  text-transform: capitalize;
+}
+.footer {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+.footer button{
+    border: none;
+    text-transform: capitalize;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: #dcdcdc;
+}
+.options button.active{
+    background: blue;
+    color: white;
+}
+/* Random designning */
+.options {
+  width: 100%;
+}
+.options button {
+  width: 44%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  padding: 10px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #dcdcdc;
+}
+.filterlable {
+    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.5rem;
+  text-transform: capitalize;
+}
+.flipoptions{
+  width: 30%;
+}
+.filprotate {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.flipoptions .filprotate button {
+  margin-right: 10px;
+  background-color: #dcdcdc;
+  
+}
+.filters h1 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.filterslider{
+    width: 100%;
+}
+button.reset{
+    background-color: rgb(255, 139, 139);
+    font-size: 15px;
+}
+button.choosebtn{
+    background-color: rgb(109, 109, 109);
+    font-size: 15px;
+    color: white;
+}
+button.saveimage{
+    background-color: rgb(2, 48, 255);
+    color: white;
+    font-size: 15px;
+}
+@media screen and (max-width: 1180px){
+  .options button{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .maincontainner {
+    width: 85%;
+    height: 95%;
+  }
+  .containner {
+    flex-direction: column-reverse;
+    height: 90%;
+  }
+  .firstdiv {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  .firstdiv .filters,
+  .range,
+  .filprotate {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .filprotate button{
+    width: 60%;
+    margin-bottom: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+  font-weight: bold;
+  }
+  .options button {
+    width: 100%;
+  }
+  .seconddiv {
+    width: 100%;
+    height: 300px;
+  }
+}
