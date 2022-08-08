@@ -113,12 +113,12 @@ body {
 .filprotate {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 .flipoptions .filprotate button {
-  width: 100%;
+  margin-right:10px;
   background-color: #dcdcdc;
   
 }
